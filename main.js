@@ -1,3 +1,5 @@
+import { products } from "./data";
+
 function isEmpty(str) {
     return str === "";
 }
@@ -40,3 +42,16 @@ function filterGreaterThan100(numbers) {
 }
 console.log(filterGreaterThan100([50, 150, 200, 80])); // [150, 200]
 console.log(filterGreaterThan100([10, 20, 30])); // []
+
+funqction getCheapestProduct(products) {
+    if (!prodicts || products.length == 0 ) return null;
+    let cheapest = products[0];
+    for (let i = 1; i < products.length; i++) {
+        if (products[i].price < cheapest.price) {
+            cheapest = products[i];
+        }
+    }               
+    return cheapest;    
+}
+const cheapest = getCheapestProduct(data.products);
+console.log('cheapest product:', cheapest.name, cheapest.price); // { name: "Product A", price: 50 }
