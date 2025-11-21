@@ -32,3 +32,11 @@ function toLowerCase(str) {
 }
 console.log(toLowerCase("Hello World")); // "hello world"
 console.log(toLowerCase("JavaScript")); // "javascript"
+
+function filterGreaterThan100(numbers) {
+    return numbers.filter(function(num) {
+        return num > 100;
+    });
+}
+console.log(filterGreaterThan100([50, 150, 200, 80])); // [150, 200]
+console.log(filterGreaterThan100([10, 20, 30])); // []
