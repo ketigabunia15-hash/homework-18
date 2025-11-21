@@ -43,8 +43,8 @@ function filterGreaterThan100(numbers) {
 console.log(filterGreaterThan100([50, 150, 200, 80])); // [150, 200]
 console.log(filterGreaterThan100([10, 20, 30])); // []
 
-funqction getCheapestProduct(products) {
-    if (!prodicts || products.length == 0 ) return null;
+function getCheapestProduct(products) {
+    if (!products || products.length == 0 ) return null;
     let cheapest = products[0];
     for (let i = 1; i < products.length; i++) {
         if (products[i].price < cheapest.price) {
